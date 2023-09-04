@@ -5,7 +5,7 @@ After its completion, a JSON file is generated, basing on which, the IT departme
 # Background
 While creating accounts for new employees I continually encountered two problems. First, the person requesting the creation of a new account usually said: "Please create a new account for person X," without giving any details, e.g., who will be the supervisor, what applications the person should have access to, whether there are any special requirements for hardware, etc. And secondly, and most importantly, because of hiring a very large number of people from different countries, very often there were mistakes with the name - the last name was stated as the first name, and the first name as the last name.  
 To prevent further mistakes and speed up the work of the IT department, I prepared a simple and quick to fill out a form that contained all the data that the IT department needs to create a account for a new employee. The person filling out the form at the end received a JSON file, which was then attached to the ticket for the IT department.  
-<span style="color:green">**After implementing this form, there was never again a mistake with the name**</span>
+:heavy_check_mark: **After implementing this form, there was never again a mistake with the name**
 
 # Features
 - The form has a login page
