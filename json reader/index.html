@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <input type="file" id="idInputSelectFile" onchange="readFile();">
+    <br><br>
+    -----------------
+    <br><br>
+    <div class="oneData">
+        <div class="key" id="toClearColor" style="float: left;">
+            Author name
+        </div>
+        <div class="value" style="float: left;" id="authorName">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('authorName');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Author title
+        </div>
+        <div class="value" style="float: left;" id="authorTitle">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('authorTitle');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Form date
+        </div>
+        <div class="value" style="float: left;" id="formDate">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('formDate');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Form time
+        </div>
+        <div class="value" style="float: left;" id="formTime">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('formTime');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space" style="height: 85px;"></div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Name
+        </div>
+        <div class="value" style="float: left;" id="name">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('name');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Surname
+        </div>
+        <div class="value" style="float: left;" id="surname">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('surname');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Department
+        </div>
+        <div class="value" style="float: left;" id="department">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('department');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Job title
+        </div>
+        <div class="value" style="float: left;" id="jobTitle">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('jobTitle');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Reporting to
+        </div>
+        <div class="value" style="float: left;" id="reportingTo">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('reportingTo');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Start date
+        </div>
+        <div class="value" style="float: left;" id="startDate">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('startDate');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Laptop
+        </div>
+        <div class="value" style="float: left;" id="laptop">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('laptop');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            PC
+        </div>
+        <div class="value" style="float: left;" id="pc">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('pc');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Monitor
+        </div>
+        <div class="value" style="float: left;" id="monitor">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('monitor');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Docking station
+        </div>
+        <div class="value" style="float: left;" id="dockingStation">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('dockingStation');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Mobile
+        </div>
+        <div class="value" style="float: left;" id="mobile">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('mobile');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Other equipment
+        </div>
+        <div class="value" style="float: left;" id="otherEquip">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('otherEquip');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Landline number
+        </div>
+        <div class="value" style="float: left;" id="landlineNumber">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('landlineNumber');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            CCTV
+        </div>
+        <div class="value" style="float: left;" id="cctv">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('cctv');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Software_1
+        </div>
+        <div class="value" style="float: left;" id="Software_1">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('Software_1');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Software_2
+        </div>
+        <div class="value" style="float: left;" id="Software_2">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('Software_2');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Office
+        </div>
+        <div class="value" style="float: left;" id="office">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('office');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Software_3
+        </div>
+        <div class="value" style="float: left;" id="Software_3">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('Software_3');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Sharepoint
+        </div>
+        <div class="value" style="float: left;" id="sharepoint">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('sharepoint');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Sharepoint details
+        </div>
+        <div class="value" style="float: left;" id="sharepointDetails">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('sharepointDetails');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            G / N drive files
+        </div>
+        <div class="value" style="float: left;" id="gNDrive">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('gNDrive');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            G / N drive files - details
+        </div>
+        <div class="value" style="float: left;" id="gNDriveDetails">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('gNDriveDetails');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Other software
+        </div>
+        <div class="value" style="float: left;" id="otherSoftware">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('otherSoftware');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="oneData">
+        <div class="key" style="float: left;">
+            Other info
+        </div>
+        <div class="value" style="float: left;" id="otherInfo">
+        </div>
+        <div class="copy" style="float: left;" onclick="copy('otherInfo');">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="space" style="height: 150px;"></div>
+
+</body>
+</html>
